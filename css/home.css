@@ -1,0 +1,765 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    max-width: 430px;
+    width    : 100%;
+    margin   : 0 auto;
+
+}
+
+
+/* Top bar */
+.topbar {
+    position       : sticky;
+    top            : 0;
+    z-index        : 100;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 12px 15px;
+    background     : #fff;
+}
+
+.topbar_logo img {
+    height : 32px;
+    width  : 80px;
+    display: block;
+}
+
+.topbar_button {
+    display      : inline-flex;
+    align-items  : center;
+    gap          : 4px;
+    height       : 32px;
+    width        : 70px;
+    padding      : 0 6px;
+    border       : 1px solid #e6e8eb;
+    border-radius: 999px;
+    background   : #fff;
+    box-shadow   : 0 2px 6px rgba(16, 24, 40, .06);
+    cursor       : pointer;
+}
+
+.topbar_button .title {
+    display        : flex;
+    justify-content: center;
+    width          : 36px;
+    align-items    : center;
+    gap            : 4px;
+    line-height    : 1;
+}
+
+.topbar_button .dot {
+    width        : 3px;
+    height       : 3px;
+    border-radius: 50%;
+    background   : #0b1b2b;
+}
+
+.topbar_button .dot--big {
+    width        : 5px;
+    height       : 5px;
+    border-radius: 50%;
+}
+
+
+.topbar_button .divider {
+    width     : 1px;
+    height    : 22px;
+    background: #e6e8eb;
+    display   : inline-block;
+    color     : transparent;
+
+}
+
+.topbar_button .close {
+    display        : flex;
+    justify-content: center;
+    width          : 36px;
+    font-size      : 22px;
+    line-height    : 1;
+    color          : #0b1b2b;
+    font-weight    : 1000;
+}
+
+
+
+
+/* Wellcome */
+.wellcome {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+    padding        : 24px 16px 16px;
+    gap            : 4px;
+    width          : 398px;
+    height         : auto;
+    background     : #FFFFFF;
+}
+
+
+.wellcome_title {
+    margin        : 0;
+    width         : 398px;
+    height        : 24px;
+    font-family   : Helvetica;
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 20px;
+    line-height   : 24px;
+    letter-spacing: 0.38px;
+    color         : #292C2B;
+}
+
+.wellcome_text {
+    font-family   : Helvetica;
+    font-weight   : 400;
+    font-style    : Regular;
+    font-size     : 16px;
+    line-height   : 22px;
+    letter-spacing: -0.41px;
+    margin        : 0;
+
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    padding : 0;
+}
+
+
+.hero_track {
+    display          : grid;
+    grid-auto-flow   : column;
+    grid-auto-columns: 100%;
+    overflow-x       : auto;
+
+
+
+}
+
+.hero_track::-webkit-scrollbar {
+    display: none;
+}
+
+.hero_slide {
+    width            : 430px;
+    height           : 200px;
+    opacity          : 1;
+    scroll-snap-align: start;
+    display          : block;
+}
+
+/* vị trí dots */
+
+.hero_dots {
+    position       : absolute;
+    left           : 16px;
+    right          : 16px;
+    bottom         : 8px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 6px;
+    pointer-events : none;
+}
+
+.hero_dot {
+    width        : 4px;
+    height       : 4px;
+    border-radius: 50%;
+    background   : rgba(255, 255, 255, .6);
+    box-shadow   : 0 0 0 1px rgba(255, 255, 255, .4) inset;
+}
+
+.hero_dot.is-active {
+    width     : 6px;
+    height    : 6px;
+    background: #fff;
+}
+
+/* Search */
+
+.search_bar {
+
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 16px;
+    gap           : 8px;
+    width         : 398px;
+    height        : auto;
+}
+
+.search_field {
+    /* SearchField */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 16px;
+    gap           : 16px;
+
+
+    background   : #F2F2F2;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 0;
+    align-self: stretch;
+    flex-grow : 1;
+
+}
+
+.search_field_text {
+    /* ✏️ Query */
+
+
+    /* Callout/Regular */
+    font-family   : 'Helvetica';
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 16px;
+    line-height   : 140%;
+    /* or 22px */
+    letter-spacing: -0.32px;
+
+    color: #292C2B;
+
+
+    /* Inside auto layout */
+    flex     : none;
+    order    : 1;
+    flex-grow: 1;
+
+}
+
+.chat_oa {
+    /* chat-oa */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    padding       : 16px;
+    gap           : 16px;
+
+
+    background   : #F2F2F2;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 1;
+    align-self: stretch;
+    flex-grow : 0;
+}
+
+.shortcuts {
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 0px 16px;
+    width         : 398px;
+    border-radius : 24px;
+}
+
+.row2 {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : flex-start;
+    padding        : 0px;
+    gap            : 24px;
+    width          : 398px;
+    height         : 80px;
+
+}
+
+.nav_item {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    padding        : 8px 0px;
+    gap            : 4px;
+
+    width        : 80px;
+    height       : 64px;
+    background   : #F2F2F2;
+    border-radius: 1000px;
+    /* Inside auto layout */
+    flex         : none;
+    order        : 0;
+    flex-grow    : 0;
+
+}
+
+.nav_item_text {
+
+    font-family: 'Helvetica';
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 12px;
+    line-height: 140%;
+    color      : #292C2B;
+
+}
+
+/* Voucher */
+.voucher {
+    box-sizing    : border-box;
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 24px 0px;
+    gap           : 12px;
+    width         : 430px;
+
+    background   : #FFFFFF;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.voucher_title {
+
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 0px 16px;
+    gap            : 10px;
+    width          : 430px;
+    box-sizing     : border-box;
+}
+
+.voucher_title_title {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 0px;
+    gap           : 8px;
+
+}
+
+.voucher_title_text {
+    font-family   : 'Helvetica';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 28px;
+    line-height   : 108%;
+    letter-spacing: 0.36px;
+    color         : #292C2B;
+}
+
+.voucher_title_more {
+    /* Caption1/Bold */
+    font-family: 'Helvetica';
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 12px;
+    line-height: 140%;
+    color      : #292C2B;
+}
+
+.frame_voucher {
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-start;
+    padding       : 0px 16px;
+    gap           : 12px;
+    width         : 430px;
+
+    overflow-x: scroll;
+    box-sizing: border-box;
+
+    flex      : none;
+    order     : 1;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
+
+.frame_voucher_item {
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-start;
+    padding       : 0px;
+    isolation     : isolate;
+    position      : relative;
+
+
+    background   : #FFFFFF;
+    border       : 1px dashed #292C2B;
+    border-radius: 8px;
+    box-sizing   : border-box;
+    flex         : none;
+    order        : 0;
+    flex-grow    : 0;
+    overflow     : hidden;
+    width        : 280px;
+    height       : 100px;
+}
+
+.thumbnail {
+    width     : 100px;
+    height    : 100px;
+    background: url("../assets/home/voucher.png") no-repeat center/cover;
+}
+
+.thumbnail_text {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items    : flex-start;
+    padding        : 8px;
+    gap            : 8px;
+    isolation      : isolate;
+    flex           : none;
+    order          : 1;
+    align-self     : stretch;
+    flex-grow      : 1;
+    z-index        : 1;
+
+}
+
+.thumbnail_text_title {
+    /* info */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 0px;
+
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 1;
+    align-self: stretch;
+    flex-grow : 0;
+    z-index   : 1;
+
+}
+
+.thumbnail_text_title_info {
+    /* tiêu đề */
+
+
+    /* Callout/Bold */
+    font-family   : 'Helvetica';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 16px;
+    line-height   : 21px;
+    /* identical to box height, or 131% */
+    letter-spacing: -0.32px;
+
+    color: #292C2B;
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 0;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
+
+.thumbnail_text_title_date {
+
+    font-family: 'Helvetica';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 12px;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+    display    : flex;
+    align-items: center;
+
+    color: #292C2B;
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 1;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
+
+.thumbnail_bar {
+    /* bar */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-start;
+    padding       : 0px;
+
+
+    width : 164px;
+    height: 4px;
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 2;
+    align-self: stretch;
+    flex-grow : 0;
+    z-index   : 2;
+
+}
+
+.retangle_bar {
+    width : 114px;
+    height: 4px;
+
+    background: #F79F40;
+
+
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+}
+
+.retangle_bar_2 {
+
+    /* Rectangle 108 */
+
+    width : 50px;
+    height: 4px;
+
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+    flex     : none;
+    order    : 1;
+    flex-grow: 1;
+
+}
+
+.button_voucher {
+    /* Frame 282 */
+
+    /* Auto layout */
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 0px;
+    gap            : 10px;
+
+
+
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 3;
+    align-self: stretch;
+    flex-grow : 0;
+    z-index   : 3;
+
+}
+
+.button_voucher_text {
+    /* button-small */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    padding        : 2px 17px;
+
+
+
+    background   : #FFFFFF;
+    border       : 2px solid #292C2B;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+
+}
+
+.button_voucher_date {
+    /* date */
+
+
+
+    /* Caption1/Bold */
+    font-family    : 'Helvetica';
+    font-style     : normal;
+    font-weight    : 700;
+    font-size      : 12px;
+    line-height    : 140%;
+    /* identical to box height, or 17px */
+    display        : flex;
+    align-items    : center;
+    text-align     : right;
+    justify-content: flex-end;
+    color          : #292C2B;
+
+
+    /* Inside auto layout */
+    flex     : none;
+    order    : 1;
+    flex-grow: 1;
+
+}
+
+.tag {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : flex-end;
+    padding        : 24px 10px 4px;
+    gap            : 10px;
+    position       : absolute;
+    width          : 70.58px;
+    height         : 47px;
+    left           : -38px;
+    top            : -38px;
+    background     : #F79F40;
+    transform      : rotate(-42.95deg);
+    flex           : none;
+    order          : 2;
+    flex-grow      : 0;
+    z-index        : 2;
+
+}
+
+.tag_voucher {
+    font-family   : 'Helvetica';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 16px;
+    line-height   : 21px;
+    letter-spacing: -0.32px;
+    color         : #FFFFFF;
+    transform     : rotate(4.05deg);
+}
+
+.frame_voucher::-webkit-scrollbar {
+    display: none;
+}
+
+/* scroll up */
+.scroll_up {
+    /* date */
+
+    /* Auto layout */
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    padding        : 16px 0px;
+    gap            : 8px;
+
+    width : 430px;
+    height: 72px;
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 5;
+    align-self: stretch;
+    flex-grow : 0;
+    box-sizing: border-box;
+}
+
+.scroll_up_text {
+    /* date */
+
+    width : 138px;
+    height: 17px;
+
+    /* Caption1/Bold */
+    font-family: 'Helvetica';
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 12px;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+    display    : flex;
+    align-items: center;
+
+    color: #292C2B;
+
+
+    /* Inside auto layout */
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+
+}
+
+/* Bottom tabbar */
+.menu_bar {
+    position       : sticky;
+    width          : 100%;
+    max-width      : 430px;
+    height         : auto;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : flex-end;
+    padding        : 0;
+    background     : #fff;
+    box-shadow     : 0px -4px 39px rgba(213, 201, 177, 0.25);
+    z-index        : 100;
+    bottom         : 0;
+}
+
+
+.tabbar_item {
+    /* nav-items */
+
+    /* Auto layout */
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    padding        : 0px;
+    opacity        : 0.4;
+    /* mờ mặc định */
+    margin         : 0 auto;
+    width          : 64px;
+    height         : 64px;
+    /* Inside auto layout */
+    flex           : none;
+    order          : 0;
+    flex-grow      : 0;
+    text-decoration: none;
+
+}
+
+
+
+.tabbar_item--active {
+    opacity: 1;
+    /* rõ khi active */
+}
+
+.tabbar_item small {
+    font-family: 'Helvetica';
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 12px;
+    line-height: 140%;
+    color      : #292C2B;
+}
