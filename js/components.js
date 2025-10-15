@@ -89,20 +89,26 @@ function createTopbar(svgIcon, titleText, backHref = "../index.html") {
   document.addEventListener('DOMContentLoaded', () => {
     const tabItems = document.querySelectorAll('.tabbar_item');
     const currentPath = window.location.pathname; 
-
+  
     tabItems.forEach(item => {
-        const linkPath = new URL(item.href).pathname; 
-
-        // Nếu chưa có pathname hoặc trùng với link, add active
-        if (!currentPath || currentPath === '/' || currentPath === linkPath || currentPath.includes(linkPath)) {
-            item.classList.add('tabbar_item--active');
-        }
-
-        item.addEventListener('click', () => {
-            tabItems.forEach(tab => tab.classList.remove('tabbar_item--active'));
-            item.classList.add('tabbar_item--active');
-        });
+      const linkPath = new URL(item.href).pathname;
+  
+      
+      if (currentPath === '/' && linkPath.endsWith('/index.html')) {
+        item.classList.add('tabbar_item--active');
+      }
+  
+      else if (currentPath === linkPath) {
+        item.classList.add('tabbar_item--active');
+      }
+  
+    
+      item.addEventListener('click', () => {
+        tabItems.forEach(tab => tab.classList.remove('tabbar_item--active'));
+        item.classList.add('tabbar_item--active');
+      });
     });
-});
+  });
+  
 
 
