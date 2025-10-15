@@ -1,0 +1,586 @@
+.order_tab {
+    position        : fixed;
+    top             : 65px;
+    background-color: white;
+    /* Auto layout */
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    padding         : 0px 16px;
+
+    width     : 430px;
+    height    : 60px;
+    overflow-x: scroll;
+
+    border-radius: 0px;
+
+    /* Inside auto layout */
+    flex           : none;
+    order          : 0;
+    align-self     : stretch;
+    flex-grow      : 0;
+    /* navtray-item */
+    box-sizing     : border-box;
+    scroll-behavior: smooth;
+    z-index        : 100;
+    /* order-tabs */
+}
+
+.order_tab::-webkit-scrollbar {
+    display: none;
+}
+
+.order_tab_title {
+    /* tabs */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: row;
+
+    padding        : 16px;
+    gap            : 10px;
+    justify-content: center;
+    align-items    : center;
+
+
+    background   : #FFFFFF;
+    border-bottom: 2px solid #599240;
+
+}
+
+.order_tab_title_text {
+    /* text */
+
+    /* Auto layout */
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+    padding        : 0px;
+    gap            : 16px;
+
+    width : 68px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 1;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
+
+.order_tab_title_others {
+    box-sizing     : border-box;
+    display        : flex;
+    flex-direction : row;
+    padding        : 16px;
+    gap            : 10px;
+    justify-content: center;
+    align-items    : center;
+    width          : auto;
+    background     : #FFFFFF;
+    border-bottom  : 1px solid #AFAFAF;
+    white-space    : nowrap;
+    opacity        : 0.7;
+
+
+}
+
+.order_tab_title_others_text {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+    padding        : 0px;
+    gap            : 16px;
+    width          : auto;
+    height         : 24px;
+
+
+}
+
+.order_list {
+
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 0px;
+    margin-top    : 60px;
+}
+
+.orders {
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 16px;
+    gap           : 4px;
+    box-sizing    : border-box;
+    width         : 430px;
+    height        : 183px;
+
+    background   : #FFFFFF;
+    border-bottom: 1px solid #F2F2F2;
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 0;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
+
+.container {
+
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+    padding        : 0px;
+    gap            : 8px;
+
+    width : 398px;
+    height: 151px;
+
+
+}
+
+.row_1 {
+    /* row1 */
+
+    /* Auto layout */
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 0px;
+    gap            : 16px;
+
+    width : 398px;
+    height: 25px;
+
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 0;
+    align-self: stretch;
+    flex-grow : 0;
+}
+
+.col_1 {
+    /* col1 */
+
+    /* Auto layout */
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    padding        : 0px;
+    gap            : 16px;
+
+
+    width : 150px;
+    height: 25px;
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 0;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
+
+.order_id {
+    /* order-number */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-start;
+    padding       : 0px 8px;
+    gap           : 8px;
+
+    width : 74px;
+    height: 24px;
+
+    background   : #599240;
+    border-radius: 4px;
+
+}
+
+.order_id_text {
+    /* #7864 */
+
+    width : 58px;
+    height: 24px;
+
+    /* Title3/Bold */
+    font-family   : 'Helvetica';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 20px;
+    line-height   : 24px;
+    /* identical to box height, or 120% */
+    text-align    : center;
+    letter-spacing: 0.38px;
+
+    color: #FFFFFF;
+
+
+
+
+}
+
+.order_date {
+    /* date */
+
+
+
+    /* Caption2/Bold */
+    font-family          : 'Helvetica';
+    font-style           : normal;
+    font-weight          : 700;
+    font-size            : 11px;
+    line-height          : 13px;
+    /* identical to box height, or 118% */
+    text-align           : center;
+    letter-spacing       : 0.06px;
+    font-feature-settings: 'case'on;
+
+    color: #AFAFAF;
+
+
+}
+
+.status {
+
+    display        : flex;
+    flex-direction : row;
+    justify-content: flex-end;
+    align-items    : flex-start;
+    padding        : 4px 0px;
+    gap            : 8px;
+
+
+    width : 59px;
+    height: 25px;
+
+    background   : #FFFFFF;
+    border-radius: 4px;
+
+
+    flex      : none;
+    order     : 1;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
+
+.status_text {
+
+    font-family: 'Helvetica';
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 12px;
+    line-height: 140%;
+
+    display    : flex;
+    align-items: center;
+    text-align : right;
+
+    color: #599240;
+
+
+
+}
+
+.row_2 {
+    /* product */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-start;
+    padding       : 0px;
+    gap           : 16px;
+
+    width : 398px;
+    height: 79px;
+
+    background   : #FFFFFF;
+    border-radius: 4px;
+
+}
+
+.row_2 img {
+    /* thumbnail */
+
+    width : 80px;
+    height: 79px;
+
+    background: url(FDTIS20-1.jpg);
+
+    /* Inside auto layout */
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+
+}
+
+.row_2_info {
+    /* info */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 0px;
+    gap           : 16px;
+
+    width : 302px;
+    height: 61px;
+
+
+    /* Inside auto layout */
+    flex     : none;
+    order    : 1;
+    flex-grow: 1;
+
+}
+
+.name {
+    /* name */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-start;
+    padding       : 0px;
+    gap           : 8px;
+
+    width : 302px;
+    height: 22px;
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 0;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
+
+.name_text {
+    font-family   : 'Helvetica';
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 16px;
+    line-height   : 140%;
+    letter-spacing: -0.32px;
+    color         : #292C2B;
+}
+
+.row_2_p {
+    /* price */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 0px;
+    gap           : 8px;
+
+    width : 302px;
+    height: 23px;
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 2;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
+
+.row_2_price {
+    /* price */
+
+    /* Auto layout */
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 0px;
+    gap            : 24px;
+
+    width : 302px;
+    height: 23px;
+
+
+
+
+}
+
+.price {
+    /* Price */
+
+
+    width : 65px;
+    height: 23px;
+
+    /* Callout/Regular */
+    font-family: 'Helvetica';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 140%;
+
+    display       : flex;
+    align-items   : center;
+    letter-spacing: -0.32px;
+
+    color: #AFAFAF;
+
+
+
+}
+
+.quantity {
+    /* price */
+
+    /* Auto layout */
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 0px;
+    gap           : 16px;
+
+    font-family: 'Helvetica';
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 16px;
+    line-height: 21px;
+
+    letter-spacing: -0.32px;
+
+    color: #292C2B;
+
+
+
+}
+
+.row_3 {
+
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 4px 0px;
+    gap            : 16px;
+
+    width : 398px;
+    height: 31px;
+
+    background: #FFFFFF;
+
+}
+
+.row_3_quantity {
+    /* tổng tiền hàng */
+
+
+    width : 80px;
+    height: 22px;
+
+
+    font-family: 'Helvetica';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 22px;
+
+    display       : flex;
+    align-items   : center;
+    letter-spacing: -0.408px;
+
+    color: #616264;
+
+}
+
+.row_3_price {
+
+    /* Auto layout */
+    display        : flex;
+    flex-direction : row;
+    justify-content: flex-end;
+    align-items    : center;
+    padding        : 0px;
+    gap            : 8px;
+
+
+    width : 141px;
+    height: 23px;
+
+
+
+}
+
+.title_price {
+    /* tổng tiền hàng */
+
+    width : 73px;
+    height: 23px;
+
+    /* Callout/Regular */
+    font-family   : 'Helvetica';
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 16px;
+    line-height   : 140%;
+    /* identical to box height, or 22px */
+    display       : flex;
+    align-items   : center;
+    letter-spacing: -0.32px;
+
+    color: #616264;
+
+
+    /* Inside auto layout */
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+
+}
+
+.price_text {
+    /* Price */
+
+    width : 60px;
+    height: 23px;
+
+    /* Callout/Bold */
+    font-family   : 'Helvetica';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 16px;
+    line-height   : 21px;
+    /* or 131% */
+    display       : flex;
+    align-items   : center;
+    letter-spacing: -0.32px;
+
+    color: #292C2B;
+
+
+    /* Inside auto layout */
+    flex      : none;
+    order     : 1;
+    align-self: stretch;
+    flex-grow : 0;
+
+}
