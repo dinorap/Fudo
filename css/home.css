@@ -134,14 +134,26 @@ body {
 
 
 .hero_track {
-    display          : grid;
-    grid-auto-flow   : column;
-    grid-auto-columns: 100%;
-    overflow-x       : auto;
-
-
-
+    overflow-x                : auto;
+    scroll-snap-type          : x mandatory;
+    scroll-behavior           : smooth;
+    -webkit-overflow-scrolling: touch;
+    display                   : grid;
+    grid-auto-flow            : column;
+    grid-auto-columns         : 100%;
+    cursor                    : grab;
+    user-select               : none;
 }
+
+.hero_track.active {
+    cursor: grabbing;
+}
+
+.hero_track img {
+    pointer-events   : none;
+    -webkit-user-drag: none;
+}
+
 
 .hero_track::-webkit-scrollbar {
     display: none;
