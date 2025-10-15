@@ -41,7 +41,7 @@ main {
     border       : 1px solid #e6e8eb;
     border-radius: 999px;
     background   : #fff;
-    box-shadow   : 0 2px 6px rgba(16, 24, 40, .06);
+    box-shadow   : 0 2px 6px rgba(16, 24, 40, 0.06);
     cursor       : pointer;
 }
 
@@ -67,14 +67,12 @@ main {
     border-radius: 50%;
 }
 
-
 .topbar_button .divider {
     width     : 1px;
     height    : 22px;
     background: #e6e8eb;
     display   : inline-block;
     color     : transparent;
-
 }
 
 .topbar_button .close {
@@ -101,12 +99,10 @@ main {
     width : auto;
     height: 41px;
 
-
     /* Inside auto layout */
     flex     : none;
     order    : 0;
     flex-grow: 0;
-
 }
 
 .bar_title_text {
@@ -116,7 +112,7 @@ main {
     height: 41px;
 
     /* LargeTitle/Bold */
-    font-family   : 'Helvetica';
+    font-family   : "Helvetica";
     font-style    : normal;
     font-weight   : 700;
     font-size     : 34px;
@@ -124,21 +120,17 @@ main {
     /* identical to box height, or 121% */
     letter-spacing: 0.374px;
 
-    color: #292C2B;
-
+    color: #292c2b;
 
     /* Inside auto layout */
     flex     : none;
     order    : 1;
     flex-grow: 0;
-
 }
 
 .bar_route {
     text-decoration: none;
 }
-
-
 
 /* Bottom tabbar */
 .menu_bar {
@@ -155,7 +147,6 @@ main {
     z-index        : 100;
     bottom         : 0;
 }
-
 
 .tabbar_item {
     /* nav-items */
@@ -176,10 +167,7 @@ main {
     order          : 0;
     flex-grow      : 0;
     text-decoration: none;
-
 }
-
-
 
 .tabbar_item--active {
     opacity: 1;
@@ -187,10 +175,10 @@ main {
 }
 
 .tabbar_item small {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style : normal;
     font-weight: 700;
     font-size  : 12px;
     line-height: 140%;
-    color      : #292C2B;
+    color      : #292c2b;
 }

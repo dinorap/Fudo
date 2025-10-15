@@ -26,7 +26,7 @@
     border       : 1px solid #e6e8eb;
     border-radius: 999px;
     background   : #fff;
-    box-shadow   : 0 2px 6px rgba(16, 24, 40, .06);
+    box-shadow   : 0 2px 6px rgba(16, 24, 40, 0.06);
     cursor       : pointer;
 }
 
@@ -52,14 +52,12 @@
     border-radius: 50%;
 }
 
-
 .topbar_button .divider {
     width     : 1px;
     height    : 22px;
     background: #e6e8eb;
     display   : inline-block;
     color     : transparent;
-
 }
 
 .topbar_button .close {
@@ -72,9 +70,6 @@
     font-weight    : 1000;
 }
 
-
-
-
 /* Wellcome */
 .wellcome {
     display        : flex;
@@ -85,9 +80,8 @@
     gap            : 4px;
     width          : 398px;
     height         : auto;
-    background     : #FFFFFF;
+    background     : #ffffff;
 }
-
 
 .wellcome_title {
     margin        : 0;
@@ -99,7 +93,7 @@
     font-size     : 20px;
     line-height   : 24px;
     letter-spacing: 0.38px;
-    color         : #292C2B;
+    color         : #292c2b;
 }
 
 .wellcome_text {
@@ -110,7 +104,6 @@
     line-height   : 22px;
     letter-spacing: -0.41px;
     margin        : 0;
-
 }
 
 /* Hero */
@@ -118,7 +111,6 @@
     position: relative;
     padding : 0;
 }
-
 
 .hero_track {
     overflow-x                : auto;
@@ -140,7 +132,6 @@
     pointer-events   : none;
     -webkit-user-drag: none;
 }
-
 
 .hero_track::-webkit-scrollbar {
     display: none;
@@ -172,8 +163,8 @@
     width        : 4px;
     height       : 4px;
     border-radius: 50%;
-    background   : rgba(255, 255, 255, .6);
-    box-shadow   : 0 0 0 1px rgba(255, 255, 255, .4) inset;
+    background   : rgba(255, 255, 255, 0.6);
+    box-shadow   : 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
 }
 
 .hero_dot.is-active {
@@ -185,7 +176,6 @@
 /* Search */
 
 .search_bar {
-
     display       : flex;
     flex-direction: row;
     align-items   : center;
@@ -205,8 +195,7 @@
     padding       : 16px;
     gap           : 16px;
 
-
-    background   : #F2F2F2;
+    background   : #f2f2f2;
     border-radius: 16px;
 
     /* Inside auto layout */
@@ -214,15 +203,13 @@
     order     : 0;
     align-self: stretch;
     flex-grow : 1;
-
 }
 
 .search_field_text {
     /* ✏️ Query */
 
-
     /* Callout/Regular */
-    font-family   : 'Helvetica';
+    font-family   : "Helvetica";
     font-style    : normal;
     font-weight   : 400;
     font-size     : 16px;
@@ -230,14 +217,12 @@
     /* or 22px */
     letter-spacing: -0.32px;
 
-    color: #292C2B;
-
+    color: #292c2b;
 
     /* Inside auto layout */
     flex     : none;
     order    : 1;
     flex-grow: 1;
-
 }
 
 .chat_oa {
@@ -250,8 +235,7 @@
     padding       : 16px;
     gap           : 16px;
 
-
-    background   : #F2F2F2;
+    background   : #f2f2f2;
     border-radius: 16px;
 
     /* Inside auto layout */
@@ -279,7 +263,6 @@
     gap            : 24px;
     width          : 398px;
     height         : 80px;
-
 }
 
 .nav_item {
@@ -292,24 +275,21 @@
 
     width        : 80px;
     height       : 64px;
-    background   : #F2F2F2;
+    background   : #f2f2f2;
     border-radius: 1000px;
     /* Inside auto layout */
     flex         : none;
     order        : 0;
     flex-grow    : 0;
-
 }
 
 .nav_item_text {
-
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style : normal;
     font-weight: 700;
     font-size  : 12px;
     line-height: 140%;
-    color      : #292C2B;
-
+    color      : #292c2b;
 }
 
 /* Voucher */
@@ -322,12 +302,11 @@
     gap           : 12px;
     width         : 430px;
 
-    background   : #FFFFFF;
-    border-bottom: 1px solid #F2F2F2;
+    background   : #ffffff;
+    border-bottom: 1px solid #f2f2f2;
 }
 
 .voucher_title {
-
     display        : flex;
     flex-direction : row;
     justify-content: space-between;
@@ -344,27 +323,26 @@
     align-items   : center;
     padding       : 0px;
     gap           : 8px;
-
 }
 
 .voucher_title_text {
-    font-family   : 'Helvetica';
+    font-family   : "Helvetica";
     font-style    : normal;
     font-weight   : 700;
     font-size     : 28px;
     line-height   : 108%;
     letter-spacing: 0.36px;
-    color         : #292C2B;
+    color         : #292c2b;
 }
 
 .voucher_title_more {
     /* Caption1/Bold */
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style : normal;
     font-weight: 700;
     font-size  : 12px;
     line-height: 140%;
-    color      : #292C2B;
+    color      : #292c2b;
 }
 
 .frame_voucher {
@@ -382,11 +360,9 @@
     order     : 1;
     align-self: stretch;
     flex-grow : 0;
-
 }
 
 .frame_voucher_item {
-
     /* Auto layout */
     display       : flex;
     flex-direction: row;
@@ -395,9 +371,8 @@
     isolation     : isolate;
     position      : relative;
 
-
-    background   : #FFFFFF;
-    border       : 1px dashed #292C2B;
+    background   : #ffffff;
+    border       : 1px dashed #292c2b;
     border-radius: 8px;
     box-sizing   : border-box;
     flex         : none;
@@ -427,7 +402,6 @@
     align-self     : stretch;
     flex-grow      : 1;
     z-index        : 1;
-
 }
 
 .thumbnail_text_title {
@@ -439,23 +413,19 @@
     align-items   : flex-start;
     padding       : 0px;
 
-
-
     /* Inside auto layout */
     flex      : none;
     order     : 1;
     align-self: stretch;
     flex-grow : 0;
     z-index   : 1;
-
 }
 
 .thumbnail_text_title_info {
     /* tiêu đề */
 
-
     /* Callout/Bold */
-    font-family   : 'Helvetica';
+    font-family   : "Helvetica";
     font-style    : normal;
     font-weight   : 700;
     font-size     : 16px;
@@ -463,20 +433,17 @@
     /* identical to box height, or 131% */
     letter-spacing: -0.32px;
 
-    color: #292C2B;
-
+    color: #292c2b;
 
     /* Inside auto layout */
     flex      : none;
     order     : 0;
     align-self: stretch;
     flex-grow : 0;
-
 }
 
 .thumbnail_text_title_date {
-
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style : normal;
     font-weight: 400;
     font-size  : 12px;
@@ -485,15 +452,13 @@
     display    : flex;
     align-items: center;
 
-    color: #292C2B;
-
+    color: #292c2b;
 
     /* Inside auto layout */
     flex      : none;
     order     : 1;
     align-self: stretch;
     flex-grow : 0;
-
 }
 
 .thumbnail_bar {
@@ -505,10 +470,8 @@
     align-items   : flex-start;
     padding       : 0px;
 
-
     width : 164px;
     height: 4px;
-
 
     /* Inside auto layout */
     flex      : none;
@@ -516,15 +479,13 @@
     align-self: stretch;
     flex-grow : 0;
     z-index   : 2;
-
 }
 
 .retangle_bar {
     width : 114px;
     height: 4px;
 
-    background: #F79F40;
-
+    background: #f79f40;
 
     flex     : none;
     order    : 0;
@@ -532,19 +493,17 @@
 }
 
 .retangle_bar_2 {
-
     /* Rectangle 108 */
 
     width : 50px;
     height: 4px;
 
-    background: #FFFFFF;
+    background: #ffffff;
 
     /* Inside auto layout */
     flex     : none;
     order    : 1;
     flex-grow: 1;
-
 }
 
 .button_voucher {
@@ -558,17 +517,12 @@
     padding        : 0px;
     gap            : 10px;
 
-
-
-
-
     /* Inside auto layout */
     flex      : none;
     order     : 3;
     align-self: stretch;
     flex-grow : 0;
     z-index   : 3;
-
 }
 
 .button_voucher_text {
@@ -583,26 +537,21 @@
     align-items    : center;
     padding        : 2px 17px;
 
-
-
-    background   : #FFFFFF;
-    border       : 2px solid #292C2B;
+    background   : #ffffff;
+    border       : 2px solid #292c2b;
     border-radius: 8px;
 
     /* Inside auto layout */
     flex     : none;
     order    : 0;
     flex-grow: 0;
-
 }
 
 .button_voucher_date {
     /* date */
 
-
-
     /* Caption1/Bold */
-    font-family    : 'Helvetica';
+    font-family    : "Helvetica";
     font-style     : normal;
     font-weight    : 700;
     font-size      : 12px;
@@ -612,19 +561,16 @@
     align-items    : center;
     text-align     : right;
     justify-content: flex-end;
-    color          : #292C2B;
-
+    color          : #292c2b;
 
     /* Inside auto layout */
     flex     : none;
     order    : 1;
     flex-grow: 1;
-
 }
 
 /* Active state for voucher button */
 .button_voucher.active .button_voucher_text {
-
     display        : flex;
     flex-direction : column;
     justify-content: center;
@@ -635,7 +581,7 @@
     width        : 86px;
     height       : 25px;
     border       : none;
-    background   : #AFAFAF;
+    background   : #afafaf;
     border-radius: 8px;
 
     /* Inside auto layout */
@@ -643,10 +589,7 @@
     order    : 0;
     flex-grow: 0;
     color    : #ffffff;
-
 }
-
-
 
 .tag {
     display        : flex;
@@ -660,23 +603,22 @@
     height         : 47px;
     left           : -38px;
     top            : -38px;
-    background     : #F79F40;
+    background     : #f79f40;
     transform      : rotate(-42.95deg);
     flex           : none;
     order          : 2;
     flex-grow      : 0;
     z-index        : 2;
-
 }
 
 .tag_voucher {
-    font-family   : 'Helvetica';
+    font-family   : "Helvetica";
     font-style    : normal;
     font-weight   : 700;
     font-size     : 16px;
     line-height   : 21px;
     letter-spacing: -0.32px;
-    color         : #FFFFFF;
+    color         : #ffffff;
     transform     : rotate(4.05deg);
 }
 
@@ -699,7 +641,6 @@
     width : 430px;
     height: 72px;
 
-
     /* Inside auto layout */
     flex      : none;
     order     : 5;
@@ -715,7 +656,7 @@
     height: 17px;
 
     /* Caption1/Bold */
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style : normal;
     font-weight: 700;
     font-size  : 12px;
@@ -724,19 +665,16 @@
     display    : flex;
     align-items: center;
 
-    color: #292C2B;
-
+    color: #292c2b;
 
     /* Inside auto layout */
     flex     : none;
     order    : 0;
     flex-grow: 0;
-
 }
 
 /* product */
 .product {
-
     display       : flex;
     flex-direction: row;
     align-items   : flex-start;
@@ -747,14 +685,12 @@
     height    : 323px;
     overflow-x: scroll;
 
-
     /* Inside auto layout */
     flex      : none;
     order     : 1;
     align-self: stretch;
     flex-grow : 0;
     box-sizing: border-box;
-
 }
 
 .vertical {
@@ -773,7 +709,7 @@
     max-width: 191px;
     height   : 323px;
 
-    background: #FFFFFF;
+    background: #ffffff;
 
     /* Inside auto layout */
     flex      : none;
@@ -788,8 +724,6 @@
 }
 
 .vertical img {
-
-
     /* Auto layout */
     display        : flex;
     flex-direction : column;
@@ -801,14 +735,13 @@
     width : 191px;
     height: 191px;
 
-
     border-radius: 16px;
 
     /* Inside auto layout */
     flex      : none;
     order     : 0;
     flex-grow : 0;
-    background: #F3EBE2;
+    background: #f3ebe2;
 }
 
 .vertical_info {
@@ -824,13 +757,11 @@
     width : 191px;
     height: 124px;
 
-
     /* Inside auto layout */
     flex      : none;
     order     : 1;
     align-self: stretch;
     flex-grow : 0;
-
 }
 
 .vertical_info_1 {
@@ -846,18 +777,15 @@
     width : 191px;
     height: 80px;
 
-
     /* Inside auto layout */
     flex      : none;
     order     : 0;
     align-self: stretch;
     flex-grow : 0;
-
 }
 
 .vertical_info_title {
-
-    font-family   : 'Helvetica';
+    font-family   : "Helvetica";
     font-style    : normal;
     font-weight   : 700;
     font-size     : 16px;
@@ -867,7 +795,7 @@
     align-items   : center;
     letter-spacing: -0.408px;
 
-    color : #292C2B;
+    color : #292c2b;
     width : 191px;
     height: auto;
 
@@ -876,14 +804,13 @@
     order     : 0;
     align-self: stretch;
     flex-grow : 0;
-
 }
 
 .vertical_info_text {
     /* catagory */
 
     /* Caption1/Regular */
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style : normal;
     font-weight: 400;
     font-size  : 12px;
@@ -892,7 +819,7 @@
     display    : flex;
     align-items: center;
 
-    color : #292C2B;
+    color : #292c2b;
     height: auto;
 
     /* Inside auto layout */
@@ -900,7 +827,6 @@
     order     : 1;
     align-self: stretch;
     flex-grow : 0;
-
 }
 
 .vertical_price {
@@ -917,23 +843,18 @@
     width : 191px;
     height: auto;
 
-
     /* Inside auto layout */
     flex      : none;
     order     : 2;
     align-self: stretch;
     flex-grow : 0;
-
 }
 
 .vertical_price_text {
     /* price */
 
-
-
-
     /* Headline/Bold */
-    font-family   : 'Helvetica';
+    font-family   : "Helvetica";
     font-style    : normal;
     font-weight   : 700;
     font-size     : 16px;
@@ -943,14 +864,12 @@
     align-items   : center;
     letter-spacing: -0.408px;
 
-    color: #292C2B;
-
+    color: #292c2b;
 
     /* Inside auto layout */
     flex     : none;
     order    : 0;
     flex-grow: 0;
-
 }
 
 .add_to_cart {
@@ -964,7 +883,7 @@
     padding        : 4px 10px;
     gap            : 4px;
 
-    color    : #F2F2F2;
+    color    : #f2f2f2;
     font-size: 30px;
     width    : 32px;
     height   : 32px;
@@ -996,7 +915,7 @@
     left    : 0px;
     top     : 0px;
 
-    background   : #F79F40;
+    background   : #f79f40;
     border-radius: 0px;
 
     /* Inside auto layout */
@@ -1005,7 +924,6 @@
     flex-grow : 0;
     z-index   : 10;
     box-sizing: border-box;
-
 }
 
 .vertical_tag_text {
@@ -1015,7 +933,7 @@
     height: 21px;
 
     /* Callout/Bold */
-    font-family   : 'Helvetica';
+    font-family   : "Helvetica";
     font-style    : normal;
     font-weight   : 700;
     font-size     : 16px;
@@ -1025,15 +943,12 @@
     align-items   : center;
     letter-spacing: -0.32px;
 
-    color: #FFFFFF;
-
+    color: #ffffff;
 
     /* Inside auto layout */
     flex     : none;
     order    : 0;
     flex-grow: 0;
-
-
 }
 
 /* cataloge */
@@ -1049,7 +964,6 @@
 
     width : 430px;
     height: 308px;
-
 
     /* Inside auto layout */
     flex      : none;
@@ -1072,13 +986,11 @@
     width : 398px;
     height: 130px;
 
-
     /* Inside auto layout */
     flex      : none;
     order     : 0;
     align-self: stretch;
     flex-grow : 0;
-
 }
 
 .product_cataloge_row_item {
@@ -1094,7 +1006,7 @@
     width : 191px;
     height: 130px;
 
-    background    : #FFFFFF;
+    background    : #ffffff;
     mix-blend-mode: plus-darker;
     border-radius : 8px;
 
@@ -1102,7 +1014,6 @@
     flex     : none;
     order    : 0;
     flex-grow: 1;
-
 }
 
 .product_cataloge_row_item_image {
@@ -1111,7 +1022,7 @@
     width : 191px;
     height: 100px;
 
-    background   : #D5C9B1;
+    background   : #d5c9b1;
     border-radius: 16px;
 
     /* Inside auto layout */
@@ -1131,12 +1042,9 @@
     height  : 367px;
     left    : -40px;
     top     : -52px;
-
-
 }
 
 .product_cataloge_row_item_image img[src*="cataloge_2.png"] {
-
     left  : 69px;
     top   : 4px;
     width : 108px;
@@ -1156,7 +1064,6 @@
     width : 167.5px;
     height: 173.5px;
     rotate: 90deg;
-
 }
 
 .product_cataloge_row_item_title {
@@ -1166,7 +1073,7 @@
     height: 22px;
 
     /* Headline/Bold */
-    font-family   : 'Helvetica';
+    font-family   : "Helvetica";
     font-style    : normal;
     font-weight   : 700;
     font-size     : 16px;
@@ -1175,8 +1082,7 @@
     text-align    : center;
     letter-spacing: -0.408px;
 
-    color: #292C2B;
-
+    color: #292c2b;
 
     /* Inside auto layout */
     flex      : none;
