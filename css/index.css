@@ -98,7 +98,7 @@ main {
     gap           : 10px;
 
     margin: 0 auto;
-    width : 200px;
+    width : auto;
     height: 41px;
 
 
@@ -112,7 +112,7 @@ main {
 .bar_title_text {
     /* title */
 
-    width : 166px;
+    width : auto;
     height: 41px;
 
     /* LargeTitle/Bold */
