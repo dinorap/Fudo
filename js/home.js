@@ -38,22 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // Tab navigation
-document.addEventListener('DOMContentLoaded', () => {
-    const tabItems = document.querySelectorAll('.tabbar_item');
-    
-    tabItems.forEach(item => {
-      item.addEventListener('click', (e) => {
-        e.preventDefault();
-        
-        // Xóa active khỏi tất cả
-        tabItems.forEach(tab => tab.classList.remove('tabbar_item--active'));
-        
-        // Thêm active cho item được click
-        item.classList.add('tabbar_item--active');
-      });
-    });
-  });
+
 
 
 const track = document.querySelector('.hero_track');
@@ -196,3 +181,28 @@ const productList_1 = document.getElementById('product-list_1');
 products_1.forEach(product => {
   productList_1.appendChild(createVerticalCard(product));
 });
+
+// Voucher button functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const voucherButtons = document.querySelectorAll('.button_voucher');
+  
+  voucherButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      // Toggle active class
+      button.classList.toggle('active');
+      
+      // Update button text based on state
+      const buttonText = button.querySelector('.button_voucher_text');
+      if (button.classList.contains('active')) {
+        buttonText.textContent = 'Đã lấy';
+      } else {
+        buttonText.textContent = 'Lấy mã';
+      }
+    });
+  });
+});
+
+
+

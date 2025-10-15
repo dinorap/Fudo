@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/product_page.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body id="body">
+    <!-- <div id="topbar"></div> -->
+    <div class="product_bar">
+        <div class="product_bar_title p_active">Khăn giấy rút</div>
+        <div class="product_bar_title">Giấy cuộn</div>
+        <div class="product_bar_title">Khăn giấy bỏ túi</div>
+        <div class="product_bar_title">Khăn giấy</div>
+    </div>
+    <main>
+       <section class="product_grid">
+        <div class="product_grid_item">
+            <div class="vertical_image">
+                <img src="../assets/home/singlefix.png" alt="fix">
+            </div>
+            
+            <div class="vertical_info">
+                <div class="vertical_info_1">
+                    <span class="vertical_info_title">Thùng 20 gói khăn giấy tre TISSUEPack</span>
+                    <span class="vertical_info_text"></span>
+                </div>
+                <div class="vertical_price">
+                    <span class="vertical_price_text">80.000 đ</span>
+                    <button class="add_to_cart">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="product_grid_item">
+            <div class="vertical_image">
+                <img src="../assets/home/singlefix.png" alt="fix">
+            </div>
+            
+            <div class="vertical_info">
+                <div class="vertical_info_1">
+                    <span class="vertical_info_title">Thùng 20 gói khăn giấy tre TISSUEPack</span>
+                    <span class="vertical_info_text"></span>
+                </div>
+                <div class="vertical_price">
+                    <span class="vertical_price_text">80.000 đ</span>
+                    <button class="add_to_cart">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="product_grid_item">
+            <div class="vertical_image">
+                <img src="../assets/home/singlefix.png" alt="fix">
+            </div>
+            
+            <div class="vertical_info">
+                <div class="vertical_info_1">
+                    <span class="vertical_info_title">Thùng 20 gói khăn giấy tre TISSUEPack</span>
+                    <span class="vertical_info_text"></span>
+                </div>
+                <div class="vertical_price">
+                    <span class="vertical_price_text">80.000 đ</span>
+                    <button class="add_to_cart">+</button>
+                </div>
+            </div>
+        </div>
+       </section>
+        
+    </main>
+    <nav class="menu_bar" id="nav_bar"></nav>
+    
+</body>
+<script src="../js/components.js"></script>
+    <script>
+        // Gọi topbar với SVG khác và tiêu đề khác
+        const backIcon = `
+         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.78033 7.46967C6.07322 7.76256 6.07322 8.23744 5.78033 8.53033L3.31066 11L5.78033 13.4697C6.07322 13.7626 6.07322 14.2374 5.78033 14.5303C5.48744 14.8232 5.01256 14.8232 4.71967 14.5303L1.71967 11.5303C1.42678 11.2374 1.42678 10.7626 1.71967 10.4697L4.71967 7.46967C5.01256 7.17678 5.48744 7.17678 5.78033 7.46967Z" fill="#292C2B"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 11C2.25 10.5858 2.58579 10.25 3 10.25H16.7812C19.9683 10.25 22.5 12.9169 22.5 16.0625V17C22.5 17.4142 22.1642 17.75 21.75 17.75C21.3358 17.75 21 17.4142 21 17V16.0625C21 13.7078 19.1029 11.75 16.7812 11.75H3C2.58579 11.75 2.25 11.4142 2.25 11Z" fill="#292C2B"/>
+                    </svg>
+        `;
+    
+        renderTopbar('#body', backIcon, 'Sản phẩm');
+        document.getElementById('nav_bar').innerHTML += menuHTML;
+      </script>
+</html>
