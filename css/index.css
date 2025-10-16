@@ -1,16 +1,23 @@
+/* ===== COMMON STYLES ===== */
+:root {
+    --font-family  : "Helvetica";
+    --color-primary: #292c2b;
+    --color-white  : #ffffff;
+    --color-border : #e6e8eb;
+    --color-dark   : #0b1b2b;
+}
+
+/* ===== BASE STYLES ===== */
 html,
 body {
     height: 100%;
 }
 
 body {
-    max-width: 430px;
-    width    : 100%;
-    margin   : 0 auto;
-    overflow : auto;
-}
-
-body {
+    max-width     : 430px;
+    width         : 100%;
+    margin        : 0 auto;
+    overflow      : auto;
     display       : flex;
     flex-direction: column;
 }
@@ -19,7 +26,7 @@ main {
     flex: 1;
 }
 
-/* Top bar */
+/* ===== TOP BAR ===== */
 .topbar {
     position       : sticky;
     top            : 0;
@@ -28,7 +35,7 @@ main {
     align-items    : center;
     justify-content: space-between;
     padding        : 12px 15px;
-    background     : #fff;
+    background     : var(--color-white);
 }
 
 .topbar_button {
@@ -38,9 +45,9 @@ main {
     height       : 32px;
     width        : 70px;
     padding      : 0 6px;
-    border       : 1px solid #e6e8eb;
+    border       : 1px solid var(--color-border);
     border-radius: 999px;
-    background   : #fff;
+    background   : var(--color-white);
     box-shadow   : 0 2px 6px rgba(16, 24, 40, 0.06);
     cursor       : pointer;
 }
@@ -58,7 +65,7 @@ main {
     width        : 3px;
     height       : 3px;
     border-radius: 50%;
-    background   : #0b1b2b;
+    background   : var(--color-dark);
 }
 
 .topbar_button .dot--big {
@@ -70,7 +77,7 @@ main {
 .topbar_button .divider {
     width     : 1px;
     height    : 22px;
-    background: #e6e8eb;
+    background: var(--color-border);
     display   : inline-block;
     color     : transparent;
 }
@@ -81,58 +88,45 @@ main {
     width          : 36px;
     font-size      : 22px;
     line-height    : 1;
-    color          : #0b1b2b;
+    color          : var(--color-dark);
     font-weight    : 1000;
 }
 
+/* ===== BAR TITLE ===== */
 .bar_title {
-    /* title */
-
-    /* Auto layout */
     display       : flex;
     flex-direction: row;
     align-items   : center;
     padding       : 0px;
     gap           : 10px;
-
-    margin: 0 auto;
-    width : auto;
-    height: 41px;
-
-    /* Inside auto layout */
-    flex     : none;
-    order    : 0;
-    flex-grow: 0;
+    margin        : 0 auto;
+    width         : auto;
+    height        : 41px;
+    flex          : none;
+    order         : 0;
+    flex-grow     : 0;
 }
 
 .bar_title_text {
-    /* title */
-
-    width : auto;
-    height: 41px;
-
-    /* LargeTitle/Bold */
-    font-family   : "Helvetica";
+    width         : auto;
+    height        : 41px;
+    font-family   : var(--font-family);
     font-style    : normal;
     font-weight   : 700;
     font-size     : 34px;
     line-height   : 41px;
-    /* identical to box height, or 121% */
     letter-spacing: 0.374px;
-
-    color: #292c2b;
-
-    /* Inside auto layout */
-    flex     : none;
-    order    : 1;
-    flex-grow: 0;
+    color         : var(--color-primary);
+    flex          : none;
+    order         : 1;
+    flex-grow     : 0;
 }
 
 .bar_route {
     text-decoration: none;
 }
 
-/* Bottom tabbar */
+/* ===== BOTTOM TABBAR ===== */
 .menu_bar {
     position       : sticky;
     width          : 100%;
@@ -142,27 +136,22 @@ main {
     justify-content: space-between;
     align-items    : flex-end;
     padding        : 0;
-    background     : #fff;
+    background     : var(--color-white);
     box-shadow     : 0px -4px 39px rgba(213, 201, 177, 0.25);
     z-index        : 100;
     bottom         : 0;
 }
 
 .tabbar_item {
-    /* nav-items */
-
-    /* Auto layout */
     display        : flex;
     flex-direction : column;
     justify-content: center;
     align-items    : center;
     padding        : 0px;
     opacity        : 0.4;
-    /* mờ mặc định */
     margin         : 0 auto;
     width          : 64px;
     height         : 64px;
-    /* Inside auto layout */
     flex           : none;
     order          : 0;
     flex-grow      : 0;
@@ -171,14 +160,13 @@ main {
 
 .tabbar_item--active {
     opacity: 1;
-    /* rõ khi active */
 }
 
 .tabbar_item small {
-    font-family: "Helvetica";
+    font-family: var(--font-family);
     font-style : normal;
     font-weight: 700;
     font-size  : 12px;
     line-height: 140%;
-    color      : #292c2b;
+    color      : var(--color-primary);
 }

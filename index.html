@@ -48,7 +48,8 @@
         <section class="section_2">
             <div class="banner_shortcut">
                 <div class="search_bar">
-                    <div class="search_field"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                    <div class="search_field" id="searchTrigger">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M9.80138 20.3049C11.9299 20.3049 13.8927 19.6166 15.4987 18.4695L21.5401 24.511C21.8205 24.7914 22.1901 24.9316 22.5852 24.9316C23.4137 24.9316 24 24.2943 24 23.4786C24 23.0962 23.8725 22.7266 23.5921 22.4589L17.589 16.443C18.8508 14.7861 19.6028 12.734 19.6028 10.5035C19.6028 5.11213 15.1928 0.702148 9.80138 0.702148C4.42273 0.702148 0 5.09939 0 10.5035C0 15.8949 4.40998 20.3049 9.80138 20.3049ZM9.80138 18.1891C5.59533 18.1891 2.11577 14.7096 2.11577 10.5035C2.11577 6.29747 5.59533 2.81792 9.80138 2.81792C14.0074 2.81792 17.487 6.29747 17.487 10.5035C17.487 14.7096 14.0074 18.1891 9.80138 18.1891Z"
@@ -74,6 +75,34 @@
                         </svg>
 
                     </span>
+                </div>
+
+                <!-- Search Overlay -->
+                <div class="search_overlay" id="searchOverlay">
+                    <div class="wellcome_overlay">
+                        <div class="wellcome_overlay_content">
+                            <p class="wellcome_title">Xin chào, Thiện!</p>
+                            <p class="wellcome_text">Hôm nay bạn muốn đặt loại giấy nào</p>
+                        </div>
+                        <button class="search_overlay_close" id="searchClose">×</button>
+                    </div>
+                    <div class="search_overlay_content">
+                        <div class="search_overlay_header">
+                            <div class="search_overlay_input_container">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.80138 20.3049C11.9299 20.3049 13.8927 19.6166 15.4987 18.4695L21.5401 24.511C21.8205 24.7914 22.1901 24.9316 22.5852 24.9316C23.4137 24.9316 24 24.2943 24 23.4786C24 23.0962 23.8725 22.7266 23.5921 22.4589L17.589 16.443C18.8508 14.7861 19.6028 12.734 19.6028 10.5035C19.6028 5.11213 15.1928 0.702148 9.80138 0.702148C4.42273 0.702148 0 5.09939 0 10.5035C0 15.8949 4.40998 20.3049 9.80138 20.3049ZM9.80138 18.1891C5.59533 18.1891 2.11577 14.7096 2.11577 10.5035C2.11577 6.29747 5.59533 2.81792 9.80138 2.81792C14.0074 2.81792 17.487 6.29747 17.487 10.5035C17.487 14.7096 14.0074 18.1891 9.80138 18.1891Z"
+                                        fill="#292C2B" />
+                                </svg>
+                                <input type="text" class="search_overlay_input" placeholder="Nhập sản phẩm bạn đang tìm" id="searchInput">
+                            </div>
+                            
+                        </div>
+                        <div class="search_overlay_results">
+                            <!-- Search results will be displayed here -->
+                        </div>
+                    </div>
                 </div>
                 <div class="shortcuts">
                     <div class="row2">

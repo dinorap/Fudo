@@ -202,6 +202,63 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Search functionality
+  const searchTrigger = document.getElementById('searchTrigger');
+  const searchOverlay = document.getElementById('searchOverlay');
+  const searchClose = document.getElementById('searchClose');
+  const searchInput = document.getElementById('searchInput');
+  
+  // Get elements to hide/show
+  const hero = document.querySelector('.hero');
+  const shortcuts = document.querySelector('.shortcuts');
+  const vouchers = document.querySelectorAll('.voucher');
+  const scrollUp = document.querySelector('.scroll_up');
+  const wellcome = document.querySelector('.wellcome');
+  const search_bar = document.querySelector('.search_bar');
+const menu_bar = document.querySelector('.menu_bar');
+  // Open search mode
+  searchTrigger.addEventListener('click', () => {
+    // Hide main content but keep topbar and welcome section
+    if (hero) hero.style.display = 'none';
+    shortcuts.style.display = 'none';
+    vouchers.forEach(voucher => voucher.style.display = 'none');
+    if (scrollUp) scrollUp.style.display = 'none';
+    wellcome.style.display = 'none';
+    search_bar.style.display = 'none';
+    menu_bar.style.display = 'none';
+    // Show search overlay
+    searchOverlay.classList.add('active');
+    
+    // Focus on input after animation
+    setTimeout(() => {
+      searchInput.focus();
+    }, 300);
+  });
+
+  // Close search mode
+  const closeSearchMode = () => {
+    searchOverlay.classList.remove('active');
+    searchInput.value = '';
+    
+    // Show main content again
+    if (hero) hero.style.display = '';
+    shortcuts.style.display = '';
+    vouchers.forEach(voucher => voucher.style.display = '');
+    wellcome.style.display = '';
+    search_bar.style.display = '';
+    menu_bar.style.display = '';
+    if (scrollUp) scrollUp.style.display = '';
+  };
+
+  searchClose.addEventListener('click', closeSearchMode);
+
+  // Close on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+      closeSearchMode();
+    }
+  });
 });
 
 

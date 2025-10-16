@@ -1,30 +1,34 @@
+/* ===== COMMON STYLES ===== */
+:root {
+    --font-family    : "Helvetica";
+    --color-primary  : #292c2b;
+    --color-secondary: #616264;
+    --color-white    : #ffffff;
+    --color-gray     : #f2f2f2;
+    --color-green    : #599240;
+}
+
+/* ===== PRODUCT BAR ===== */
 .product_bar {
-    /* col1 */
     position        : fixed;
     top             : 65px;
-    background-color: white;
-    /* Auto layout */
+    background-color: var(--color-white);
     display         : flex;
     flex-direction  : row;
     align-items     : center;
     padding         : 0px 16px;
     gap             : 16px;
-
-    width     : 430px;
-    height    : 60px;
-    overflow-x: scroll;
-
-    border-radius: 0px;
-
-    /* Inside auto layout */
-    flex           : none;
-    order          : 0;
-    align-self     : stretch;
-    flex-grow      : 0;
-    /* navtray-item */
-    box-sizing     : border-box;
-    scroll-behavior: smooth;
-    z-index        : 100;
+    width           : 430px;
+    height          : 60px;
+    overflow-x      : scroll;
+    border-radius   : 0px;
+    flex            : none;
+    order           : 0;
+    align-self      : stretch;
+    flex-grow       : 0;
+    box-sizing      : border-box;
+    scroll-behavior : smooth;
+    z-index         : 100;
 }
 
 .product_bar::-webkit-scrollbar {
@@ -32,59 +36,41 @@
 }
 
 .product_bar_title {
-    /* Auto layout */
     display        : flex;
     flex-direction : row;
     justify-content: center;
     align-items    : center;
     padding        : 10px;
     gap            : 10px;
-
-    /* title */
-
-    /* Caption1/Regular */
-    font-family: "Helvetica";
-    font-style : normal;
-    font-weight: 400;
-    font-size  : 12px;
-    line-height: 140%;
-    /* identical to box height, or 17px */
-    display    : flex;
-    align-items: center;
-
-    color: #616264;
-
-    /* Inside auto layout */
-    flex     : none;
-    order    : 0;
-    flex-grow: 0;
-
-    /* Inside auto layout */
-    flex     : none;
-    order    : 0;
-    flex-grow: 0;
+    font-family    : var(--font-family);
+    font-style     : normal;
+    font-weight    : 400;
+    font-size      : 12px;
+    line-height    : 140%;
+    display        : flex;
+    align-items    : center;
+    color          : var(--color-secondary);
+    flex           : none;
+    order          : 0;
+    flex-grow      : 0;
 }
 
 .p_active {
-    /* Headline/Bold */
-    font-family   : "Helvetica";
+    font-family   : var(--font-family);
     font-style    : normal;
     font-weight   : 700;
     font-size     : 16px;
     line-height   : 22px;
-    /* identical to box height, or 138% */
     display       : flex;
     align-items   : center;
     letter-spacing: -0.408px;
-
-    color: #292c2b;
-
-    /* Inside auto layout */
-    flex     : none;
-    order    : 0;
-    flex-grow: 0;
+    color         : var(--color-primary);
+    flex          : none;
+    order         : 0;
+    flex-grow     : 0;
 }
 
+/* ===== PRODUCT GRID ===== */
 .product_grid {
     display       : flex;
     flex-direction: row;
@@ -93,59 +79,44 @@
     align-content : flex-start;
     padding       : 0px;
     gap           : 16px;
-
-    position: absolute;
-    width   : 398px;
-    height  : 662px;
-    left    : 16px;
-    top     : 130px;
+    position      : absolute;
+    width         : 398px;
+    height        : 662px;
+    left          : 16px;
+    top           : 130px;
 }
 
 .product_grid_item {
-    /* vertical */
-
-    /* Auto layout */
     display        : flex;
     flex-direction : column;
     justify-content: flex-end;
     align-items    : center;
     padding        : 0px;
     gap            : 8px;
-
-    width    : 191px;
-    min-width: 191px;
-    max-width: 191px;
-    height   : 323px;
-
-    background: #ffffff;
-
-    /* Inside auto layout */
-    flex     : none;
-    order    : 0;
-    flex-grow: 0;
+    width          : 191px;
+    min-width      : 191px;
+    max-width      : 191px;
+    height         : 323px;
+    background     : var(--color-white);
+    flex           : none;
+    order          : 0;
+    flex-grow      : 0;
 }
 
 .vertical_image {
-    /* image */
-
-    /* Auto layout */
     display        : flex;
     flex-direction : column;
     justify-content: flex-end;
     align-items    : center;
     padding        : 0px;
     gap            : 10px;
-
-    width : 191px;
-    height: 191px;
-
-    border-radius: 16px;
-
-    /* Inside auto layout */
-    flex     : none;
-    order    : 0;
-    flex-grow: 0;
-    overflow : hidden;
+    width          : 191px;
+    height         : 191px;
+    border-radius  : 16px;
+    flex           : none;
+    order          : 0;
+    flex-grow      : 0;
+    overflow       : hidden;
 }
 
 .vertical_image img {
