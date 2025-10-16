@@ -3,6 +3,7 @@
 - Đã thiết kế và dựng **trang chủ** của ứng dụng đúng theo bản Figma.
 - Bổ sung thêm các trang khác:
   - **Overlay tìm kiếm (Search)**
+  - **Trang khuyến mãi (Voucher)**
   - **Trang sản phẩm (Products)**
   - **Trang giỏ hàng (Cart)**
   - **Trang đơn hàng (Orders)**
