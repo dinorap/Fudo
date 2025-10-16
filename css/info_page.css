@@ -18,7 +18,7 @@
     position       : absolute;
     width          : 430px;
     height         : 480px;
-    left           : 0px;
+
 }
 
 .user_info {
@@ -108,14 +108,14 @@
     padding        : 16px 0px;
     width          : 430px;
     height         : 212px;
-    overflow-x     : scroll;
-    background     : var(--color-white);
-    border-radius  : 0px;
-    border-bottom  : 1px solid var(--color-border);
-    flex           : none;
-    order          : 1;
-    align-self     : stretch;
-    flex-grow      : 0;
+
+    background   : var(--color-white);
+    border-radius: 0px;
+    border-bottom: 1px solid var(--color-border);
+    flex         : none;
+    order        : 1;
+    align-self   : stretch;
+    flex-grow    : 0;
 }
 
 .tab {
