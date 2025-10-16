@@ -20,7 +20,6 @@ function createVerticalCard({ image, tag, title, desc, price }) {
   return card;
 }
 
-
 const products = [
   {
     image: "assets/home/singlefix.png",
@@ -56,9 +55,8 @@ const products = [
     title: "Thùng 20 gói khăn giấy tre TISSUEPack",
     desc: "",
     price: "80.000 đ"
-  },
+  }
 ];
-
 
 const productList = document.getElementById('product-list');
 products.forEach(product => {
