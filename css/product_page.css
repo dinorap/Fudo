@@ -83,6 +83,7 @@
     width         : 398px;
     height        : 662px;
     top           : 130px;
+    padding       : 0 16px;
 }
 
 .product_grid_item {
